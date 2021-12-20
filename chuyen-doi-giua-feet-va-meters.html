@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<input type="number"id="total" placeholder="mời nhập">
+<input type="button"value="m-f" onclick="meterToFoot()">
+<input type="button"value="f-m" onclick="fooToMeter()">
+<p id="result"></p>
+
+<script>
+    function fooToMeter() {
+        let a=document.getElementById('total').value;
+        let b=3.279*a;
+        document.getElementById('result').innerHTML=b;
+    }
+    function meterToFoot() {
+        let a=document.getElementById('total').value;
+        let c=0.305*a;
+        document.getElementById('result').innerHTML=c;
+    }
+</script>
+</body>
+</html>
